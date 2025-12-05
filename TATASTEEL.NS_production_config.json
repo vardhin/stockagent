@@ -1,0 +1,72 @@
+{
+  "stock_symbol": "TATASTEEL.NS",
+  "threshold": 0.3,
+  "model_config": {
+    "windows": [
+      100,
+      150,
+      200
+    ],
+    "learning_rate": 0.0001,
+    "dropout": 0.15,
+    "batch_size": 32,
+    "max_steps": 2500,
+    "scaler": "standard",
+    "n_blocks": [
+      4,
+      3,
+      2
+    ],
+    "mlp_units": [
+      [
+        768,
+        512
+      ],
+      [
+        512,
+        512
+      ],
+      [
+        512,
+        256
+      ]
+    ],
+    "n_pool_kernel_size": [
+      2,
+      2,
+      1
+    ],
+    "n_freq_downsample": [
+      8,
+      4,
+      1
+    ]
+  },
+  "validated_performance": {
+    "f1_score": 75.0,
+    "precision": 66.66666666666666,
+    "recall": 85.71428571428571,
+    "accuracy": 69.23076923076923,
+    "signals_per_60_days": 13,
+    "signal_frequency_days": 4.615384615384615,
+    "tp": 6,
+    "tn": 3,
+    "fp": 3,
+    "fn": 1
+  },
+  "current_price": 167.11000061035156,
+  "last_training_date": "2025-12-05",
+  "training_data_points": 7468,
+  "validation_period_days": 60,
+  "model_metadata": {
+    "ensemble_size": 3,
+    "lookback_windows": [
+      100,
+      150,
+      200
+    ],
+    "forecast_horizon": 5,
+    "total_parameters": "24.3M",
+    "training_epochs": 2500
+  }
+}

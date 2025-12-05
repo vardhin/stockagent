@@ -1,0 +1,50 @@
+{
+  "stock": "TATASTEEL.NS",
+  "threshold": 0.4,
+  "f1_score": 80.0,
+  "precision": 66.66666666666666,
+  "recall": 100.0,
+  "coverage": 11.864406779661017,
+  "expected_signals_per_60_days": 7,
+  "model_config": {
+    "windows": [
+      100,
+      150,
+      200
+    ],
+    "learning_rate": 0.0001,
+    "dropout": 0.15,
+    "batch_size": 32,
+    "max_steps": 2500,
+    "scaler": "standard",
+    "n_blocks": [
+      4,
+      3,
+      2
+    ],
+    "mlp_units": [
+      [
+        768,
+        512
+      ],
+      [
+        512,
+        512
+      ],
+      [
+        512,
+        256
+      ]
+    ],
+    "n_pool_kernel_size": [
+      2,
+      2,
+      1
+    ],
+    "n_freq_downsample": [
+      8,
+      4,
+      1
+    ]
+  }
+}

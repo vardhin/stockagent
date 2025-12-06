@@ -1,0 +1,25 @@
+{
+  "audit_date": "2025-12-06 19:00:38",
+  "stock": "TATASTEEL.NS",
+  "data_leakage": "PASS",
+  "buy_hold_comparison": {
+    "strategy_return": 9.06,
+    "buy_hold_return": -1.5726223278020746,
+    "outperformance": 10.632622327802075
+  },
+  "transaction_costs": {
+    "return_before_costs": 9.06,
+    "return_after_costs": 8.894105623908429,
+    "cost_impact": 0.16589437609157187
+  },
+  "walk_forward": {
+    "periods_tested": 3,
+    "avg_return_per_period": 0.3830131507663956,
+    "consistency_score": -1086.2543753604773
+  },
+  "recommendations": {
+    "deploy_ready": true,
+    "paper_trade_first": true,
+    "cross_validation_needed": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "deployment_date": "2025-12-06",
+  "phase": "PAPER_TRADING",
+  "capital": {
+    "paper": 50000,
+    "live_phase1": 50000,
+    "live_phase2": 100000
+  },
+  "risk_management": {
+    "Max Risk per Trade": "2-3% of capital",
+    "Stop Loss": "-3% from entry",
+    "Take Profit": "+5% from entry (optional)",
+    "Position Size": "30-50% of capital",
+    "Max Open Positions": "1 at a time",
+    "Daily Loss Limit": "-5% of capital",
+    "Weekly Review": "Mandatory"
+  },
+  "expected_performance": {
+    "return_pct": 8.894105623908429,
+    "trades_per_60_days": 13,
+    "win_rate": 66.66666666666666
+  },
+  "success_criteria": {
+    "min_win_rate": 60,
+    "min_trades": 10,
+    "min_sharpe": 1.5,
+    "max_drawdown": 10
+  }
+}
